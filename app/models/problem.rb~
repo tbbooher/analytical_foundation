@@ -1,0 +1,5 @@
+class Problem < ActiveRecord::Base
+
+  belongs_to :user, :foreign_key => "submitter"
+  has_many :solutions
+end

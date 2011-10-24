@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @problem.title
+%p
+  %b Description:
+  = @problem.description
+%p
+  %b Submitter:
+  = @problem.submitter_id
+%p
+  %b Difficulty:
+  = @problem.difficulty
+
+= link_to 'Edit', edit_problem_path(@problem)
+\|
+= link_to 'Back', problems_path

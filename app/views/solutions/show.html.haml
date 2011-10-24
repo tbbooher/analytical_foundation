@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Description:
+  = @solution.description
+%p
+  %b User:
+  = @solution.user_id
+
+= link_to 'Edit', edit_solution_path(@solution)
+\|
+= link_to 'Back', solutions_path

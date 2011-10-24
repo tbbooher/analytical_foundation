@@ -1,0 +1,25 @@
+%h1 Listing problems
+
+%table
+  %tr
+    %th Title
+    %th Description
+    %th Submitter
+    %th Difficulty
+    %th
+    %th
+    %th
+
+  - @problems.each do |problem|
+    %tr
+      %td= problem.title
+      %td= problem.description
+      %td= problem.submitter_id
+      %td= problem.difficulty
+      %td= link_to 'Show', problem
+      %td= link_to 'Edit', edit_problem_path(problem)
+      %td= link_to 'Destroy', problem, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Problem', new_problem_path

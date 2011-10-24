@@ -1,4 +1,12 @@
 AnalyticalFoundation::Application.routes.draw do
+  resources :solutions
+
+  resources :problems
+
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   #get \"users\/show\"
 
   root :to => "home#index"

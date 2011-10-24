@@ -1,3 +1,20 @@
 %h3 Home
+
+%p This is a very simple page that will get more fun. (Yes, it will.)
+
+%p
+  = image_tag "http://farm1.static.flickr.com/6/11386276_c148dfd9bd.jpg"
+
+%p We are a group of people who solve problems. We also like to share ideas and get other cool ways to solve problems.
+
+%p Here is who has signed up:
+
 - @users.each do |user|
   %p User: #{link_to user.name, user}
+
+%p Here are the problems:
+
+%ul
+  - @problems.each do |p|
+    = link_to p.title, p
+
