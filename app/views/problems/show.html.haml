@@ -5,14 +5,16 @@
   = @problem.title
 %p
   %b Description:
-  = @problem.description
+  = @problem.description.html_safe
 %p
   %b Submitter:
-  = @problem.submitter_id
+  = @problem.submitter.name
 %p
   %b Difficulty:
   = @problem.difficulty
 
 = link_to 'Edit', edit_problem_path(@problem)
 \|
-= link_to 'Back', problems_path
+= link_to 'Problems List', problems_path
+\|
+= link_to 'Home', root_path
