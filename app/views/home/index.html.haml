@@ -16,5 +16,6 @@
 
 %ul
   - @problems.each do |p|
-    = link_to p.title, p
+    %li
+      = link_to p.title, p
 
