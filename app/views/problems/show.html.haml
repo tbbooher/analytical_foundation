@@ -1,16 +1,14 @@
 %p#notice= notice
 
-%p
-  %b Title:
+%h1
   = @problem.title
 %p
-  %b Description:
   = @problem.description.html_safe
 %p
-  %b Submitter:
+  By:
   = @problem.submitter.name
 %p
-  %b Difficulty:
+  %b Estimate:
   = @problem.difficulty
 
 %div#disqus_thread

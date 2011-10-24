@@ -1,21 +1,34 @@
-%h3 Home
+#posts_big
+  %div{:id => "post_3", :class=> "big_post", :style => "top: -100px; left: 0px; display: none;"}
+    %img.next{:alt => "next page", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/arrow.gif", :style => "left: 755px; opacity: 1;"}
+      %img.previous{:alt => "next page", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/previous.gif", :style => "left: -50px; opacity: 1;"}
+        %span.post_top
+        .post_info{:style => "top: -50px; display: none;"}
+          .inner-div
+            %span.author
+              = "Tim"
+            %span.date July 11, 2010
+            %span.categories "none"
+            %span.readmore 
+              %span
+                %a{:href => "http://www.elegantthemes.com/preview/DailyNotes/archives/note/this-happened-to-me-today"} full post »
+        %img.close{:alt => "close", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/close.png"}
+          %h1 The Title
+          %p !!!!!
+          %br.clear
+            %span.post_bottom
 
-%p This is a very simple page that will get more fun. (Yes, it will.)
-
-%p
-  = image_tag "http://farm1.static.flickr.com/6/11386276_c148dfd9bd.jpg"
-
-%p We are a group of people who solve problems. We also like to share ideas and get other cool ways to solve problems.
-
-%p Here is who has signed up:
-
-- @users.each do |user|
-  %p User: #{link_to user.name, user}
-
-%p Here are the problems:
-
-%ul
-  - @problems.each do |p|
-    %li
-      = link_to p.title, p
+#posts
+  %a{:href => "http://www.elegantthemes.com/preview/DailyNotes/page/2"}
+    %img#next2{:alt => "next page", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/arrow.gif"}/
+  - @problems.each do |p|  
+    .post{:title => "post_#{p.id}"}
+      .inside
+        .overflow
+          %h2
+            = "angry #{p.title}"
+          =  p.description
+          %p dad
+        %img.icon{:alt => "article post", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/icon-post.gif"}/
+    / .post
 
