@@ -1,6 +1,6 @@
 require 'rbconfig'
 HOST_OS = RbConfig::CONFIG['host_os']
-source 'http://rubygems.org'
+source 'http://rubygems.org/'
 gem 'rails', '3.1.1'
 group :production do
   gem 'pg'
@@ -8,6 +8,8 @@ end
 group :development, :test do
   gem 'sqlite3'
 end
+
+gem 'em-websocket', :git => "git://github.com/igrigorik/em-websocket.git"
 
 # prepping for deployment
 gem 'thin'
@@ -32,7 +34,7 @@ gem "launchy", ">= 2.0.5", :group => :test
 gem "guard", ">= 0.6.2", :group => :development
 case HOST_OS
   when /darwin/i
-    gem 'rb-fsevent', :group => :development
+    #gem 'rb-fsevent', :group => :development
     gem 'growl', :group => :development
   when /linux/i
     gem 'libnotify', :group => :development
