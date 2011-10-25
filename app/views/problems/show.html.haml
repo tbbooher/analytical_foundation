@@ -12,7 +12,25 @@
     |
     = @problem.difficulty
   %img.line{:alt => "line", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/line.gif"}
-    = @problem.description.html_safe
+  = @problem.description.html_safe
+  %br.clear
+  %span.main_post_bottom
+
+/ SOLUTIONS
+- unless @solutions.empty?
+  .main_post
+    %span.main_post_top2
+    %h1 solutions
+    %img.line{:alt => "line", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/line.gif"}
+    %div#solutions
+      - @solutions.each do |s|
+        .main_postinfo
+          By
+          = link_to s.user.name, s.user
+          |
+          = s.created_at.to_s
+        %img.line{:alt => "line", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/line.gif"}
+        = s.description
     %br.clear
     %span.main_post_bottom
 
@@ -20,12 +38,9 @@
   %span.main_post_top2
   %h3#comments comments
   %img.line{:alt => "line", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/line.gif"}
-    %ol.commentlist.clearfix
-      %div#disqus_thread
+    %div#disqus_thread
     %br.clear
     %span.main_post_bottom
-
-
 
 :javascript
   var disqus_shortname = 'analyticfoundation'; 

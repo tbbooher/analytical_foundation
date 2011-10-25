@@ -93,13 +93,14 @@
           %ul.nav.superfish
             = render 'shared/navigation'
           / SEARCH FORM
-          #search-wrap
-            %a{:href => "http://www.elegantthemes.com/preview/DailyNotes/feed/rss"}
-              %img#rss{:alt => "rss", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/rss.gif"}/
-            %img#search{:alt => "search", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/search.gif"}/
-            #search-form
-              %form#searchform{:action => "http://www.elegantthemes.com/preview/DailyNotes", :method => "get"}
-                %input#searchinput{:name => "s", :type => "text", :value => "search this site..."}/
+          /
+            #search-wrap
+              %a{:href => "http://www.elegantthemes.com/preview/DailyNotes/feed/rss"}
+                %img#rss{:alt => "rss", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/rss.gif"}/
+              %img#search{:alt => "search", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/search.gif"}/
+              #search-form
+                %form#searchform{:action => "http://www.elegantthemes.com/preview/DailyNotes", :method => "get"}
+                  %input#searchinput{:name => "s", :type => "text", :value => "search this site..."}/
           %br.clear/
           = yield
     %script{:src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/js/easing.js", :type => "text/javascript"}
