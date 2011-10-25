@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b71c9728-7240-4b55-928c-dbc1b5ddd6ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/title.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/home/about.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.haml" afterPath="$PROJECT_DIR$/app/views/home/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/problems/show.html.haml" afterPath="$PROJECT_DIR$/app/views/problems/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_navigation.html.haml" afterPath="$PROJECT_DIR$/app/views/shared/_navigation.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-    </list>
+    <list default="true" id="b71c9728-7240-4b55-928c-dbc1b5ddd6ec" name="Default" comment="" />
     <ignored path="analytical_foundation.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="12" selection-start="1184" selection-end="1184" vertical-scroll-proportion="0.8549223">
+            <state line="22" column="12" selection-start="1184" selection-end="1184" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -82,10 +72,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="about.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/about.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="2" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+            <state line="9" column="2" selection-start="330" selection-end="330" vertical-scroll-proportion="0.34974092">
               <folding />
             </state>
           </provider>
@@ -648,16 +638,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/about.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+        <state line="22" column="12" selection-start="1184" selection-end="1184" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/home/about.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="12" selection-start="1184" selection-end="1184" vertical-scroll-proportion="0.8549223">
+        <state line="9" column="2" selection-start="330" selection-end="330" vertical-scroll-proportion="0.34974092">
           <folding />
         </state>
       </provider>
