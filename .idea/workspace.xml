@@ -27,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="12" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0">
+            <state line="33" column="38" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.70846903">
               <folding />
             </state>
           </provider>
@@ -54,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_navigation.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_navigation.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_navigation.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="69" selection-start="249" selection-end="249" vertical-scroll-proportion="0.19138756">
+            <state line="8" column="69" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,10 +80,10 @@
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/problems/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/home/about.html.haml" />
         <option value="$PROJECT_DIR$/app/views/shared/_navigation.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
       </list>
     </option>
   </component>
@@ -596,13 +596,6 @@
         <state line="7" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="85" column="35" selection-start="4497" selection-end="4497" vertical-scroll-proportion="-49.03846">
@@ -619,7 +612,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_navigation.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="69" selection-start="249" selection-end="249" vertical-scroll-proportion="0.19138756">
+        <state line="8" column="69" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="38" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.70846903">
           <folding />
         </state>
       </provider>

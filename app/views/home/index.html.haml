@@ -31,7 +31,7 @@
         .overflow
           %h2
             = p.title
-          =  truncate(p.description).html_safe
+          =  truncate(p.description,50).html_safe
         %img.icon{:alt => "article post", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/icon-post.gif"}/
     / .post
   #footer
