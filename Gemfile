@@ -16,6 +16,7 @@ gem 'em-websocket', :git => "git://github.com/igrigorik/em-websocket.git"
 # prepping for deployment
 gem 'thin'
 gem 'heroku'
+gem 'RedCloth'
 
 group :assets do
   gem 'coffee-rails', '~> 3.1.1'
