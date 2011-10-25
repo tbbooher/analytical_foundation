@@ -1,21 +1,25 @@
 #posts_big
-  %div{:id => "post_3", :class=> "big_post", :style => "top: -100px; left: 0px; display: none;"}
-    %img.next{:alt => "next page", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/arrow.gif", :style => "left: 755px; opacity: 1;"}
-      %img.previous{:alt => "next page", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/previous.gif", :style => "left: -50px; opacity: 1;"}
-        %span.post_top
-        .post_info{:style => "top: -50px; display: none;"}
-          .inner-div
-            %span.author
-              = "Tim"
-            %span.date July 11, 2010
-            %span.categories "none"
-            %span.readmore 
-              %span
-                %a{:href => "http://www.elegantthemes.com/preview/DailyNotes/archives/note/this-happened-to-me-today"} full post »
-        %img.close{:alt => "close", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/close.png"}
-          %h1 The Title
-          %p !!!!!
-          %br.clear
+  - @problems.each do |p|
+    %div{:id => "post_#{p.id}", :class=> "big_post", :style => "top: -100px; left: 0px; display: none;"}
+      %img.next{:alt => "next page", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/arrow.gif", :style => "left: 755px; opacity: 1;"}
+        %img.previous{:alt => "next page", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/previous.gif", :style => "left: -50px; opacity: 1;"}
+          %span.post_top
+          .post_info{:style => "top: -50px; display: none;"}
+            .inner-div
+              %span.author
+                = link_to p.submitter.name, p.submitter
+              %span.date
+                = p.created_at.to_s
+              %span.categories
+                = link_to "Radar Problems", "#"
+              %span.readmore
+                %span
+                  = link_to "full post »", p
+          %img.close{:alt => "close", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/close.png"}
+            %h1
+              = p.title
+            = p.description
+            %br.clear
             %span.post_bottom
 
 #posts
@@ -26,9 +30,12 @@
       .inside
         .overflow
           %h2
-            = "angry #{p.title}"
-          =  p.description
-          %p dad
+            = p.title
+          =  truncate(p.description)
         %img.icon{:alt => "article post", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/icon-post.gif"}/
     / .post
+  #footer
+    designed by
+    = link_to "Tim Booher", "http://www.theboohers.org"
+
 
