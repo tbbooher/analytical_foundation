@@ -30,7 +30,7 @@
           |
           = s.created_at.to_s
         %img.line{:alt => "line", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/line.gif"}
-        = RedCloth.new(s.description).to_html.html.safe
+        = RedCloth.new(s.description).to_html.html_safe
     %br.clear
     %span.main_post_bottom
 
