@@ -3,4 +3,8 @@ class HomeController < ApplicationController
     @users = User.all
     @problems = Problem.all
   end
+
+  def about
+
+  end
 end

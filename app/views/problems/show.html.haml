@@ -1,17 +1,31 @@
 %p#notice= notice
 
-%h1
-  = @problem.title
-%p
-  = @problem.description.html_safe
-%p
-  By:
-  = @problem.submitter.name
-%p
-  %b Estimate:
-  = @problem.difficulty
+.main_post
+  %span.main_post_top
+  %h1
+    = @problem.title
+  .main_postinfo
+    Posted  on
+    = @problem.created_at
+    in
+    = link_to "Radar Problems"
+    |
+    = @problem.difficulty
+  %img.line{:alt => "line", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/line.gif"}
+    = @problem.description.html_safe
+    %br.clear
+    %span.main_post_bottom
 
-%div#disqus_thread
+.main_post
+  %span.main_post_top2
+  %h3#comments comments
+  %img.line{:alt => "line", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/line.gif"}
+    %ol.commentlist.clearfix
+      %div#disqus_thread
+    %br.clear
+    %span.main_post_bottom
+
+
 
 :javascript
   var disqus_shortname = 'analyticfoundation'; 
