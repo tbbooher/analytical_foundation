@@ -10,6 +10,8 @@ AnalyticalFoundation::Application.routes.draw do
   #get \"users\/show\"
 
   get "home/about"
+  get "home/curriculum"
+  get "home/schedule"
 
   root :to => "home#index"
 

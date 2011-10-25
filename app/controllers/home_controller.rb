@@ -7,4 +7,12 @@ class HomeController < ApplicationController
   def about
 
   end
+
+  def curriculum
+
+  end
+
+  def schedule
+
+  end
 end

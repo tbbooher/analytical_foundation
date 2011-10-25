@@ -1,12 +1,25 @@
-%li.page_item.current_page_item
+/ .page_item.current_page_item <-- possible
+%li
   = link_to "Home", root_url, title: "Home"
-%li.page_item.page-item-22
+%li
   = link_to "About", home_about_url
 / end ul.nav
+
+%li
+  = link_to "Curriculum", home_curriculum_url
+
+%li
+  = link_to "Schedule", home_schedule_url
 
 - if user_signed_in?
   %li
     = link_to('Logout', destroy_user_session_path, :method=>'delete')
+- else
+  %li
+    = link_to('Login', new_user_session_path)
 - if user_signed_in?
   %li
     = link_to('Edit account', edit_user_registration_path)
+- else
+  %li
+    = link_to('Sign up', new_user_registration_path)
