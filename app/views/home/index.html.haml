@@ -18,7 +18,7 @@
           %img.close{:alt => "close", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/close.png"}
             %h1
               = p.title
-            = p.description
+            = p.description.html_safe
             %br.clear
             %span.post_bottom
 
@@ -31,7 +31,7 @@
         .overflow
           %h2
             = p.title
-          =  truncate(p.description)
+          =  truncate(p.description.html_safe)
         %img.icon{:alt => "article post", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/icon-post.gif"}/
     / .post
   #footer
