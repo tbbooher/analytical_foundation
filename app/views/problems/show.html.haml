@@ -14,8 +14,9 @@
   %img.line{:alt => "line", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/line.gif"}
   = @problem.description.html_safe
   %br.clear
+  %img.line{:alt => "line", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/line.gif"}
   - if can? :create, Solution
-    = link_to "Create Solution", new_problem_solution_url(@problem)
+    = link_to "#{current_user.name.titleize}, create a solution", new_problem_solution_url(@problem)
   %span.main_post_bottom
 
 / SOLUTIONS
@@ -27,12 +28,12 @@
     %div#solutions
       - @solutions.each do |s|
         .main_postinfo
-          By
+          Solution By
           = link_to s.user.name, s.user
           |
           = s.created_at.to_s
+        = RedCloth.new(s.description).to_html.html_safe if s.description
         %img.line{:alt => "line", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/line.gif"}
-        = RedCloth.new(s.description).to_html.html_safe
     %br.clear
     %span.main_post_bottom
 

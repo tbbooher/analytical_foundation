@@ -8,6 +8,6 @@
 
   .field
     = f.text_area :description, cols: 90, rows: 30
-  = f.hidden_field :user, :value => current_user
+  = f.hidden_field :user_id, :value => current_user.id
   .actions
     = f.submit 'Save'

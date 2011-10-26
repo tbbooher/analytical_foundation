@@ -12,10 +12,10 @@
     %tr
       %td= solution.description
       %td= solution.user_id
-      %td= link_to 'Show', solution
-      %td= link_to 'Edit', edit_solution_path(solution)
-      %td= link_to 'Destroy', solution, :confirm => 'Are you sure?', :method => :delete
+      %td= link_to 'Show', problem_solution_path(@problem, solution)
+      %td= link_to 'Edit', edit_problem_solution_path(@problem, solution)
+      %td= link_to 'Destroy', problem_solution_path(@problem, solution), :confirm => 'Are you sure?', :method => :delete
 
 %br
 
-= link_to 'New Solution', new_solution_path
+= link_to 'New Solution', new_problem_solution_path(@problem)
