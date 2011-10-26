@@ -3,7 +3,6 @@
 %table
   %tr
     %th Title
-    %th Description
     %th Submitter
     %th Difficulty
     %th
@@ -12,9 +11,8 @@
 
   - @problems.each do |problem|
     %tr
-      %td= problem.title
-      %td= problem.description
-      %td= problem.submitter_id
+      %td= link_to problem.title, problem
+      %td= problem.submitter.name
       %td= problem.difficulty
       %td= link_to 'Show', problem
       %td= link_to 'Edit', edit_problem_path(problem)

@@ -37,6 +37,8 @@
         - if @user
           - if @user.id == s.user.id
             = link_to "Edit", edit_problem_solution_path(@problem, s)
+            |
+            = link_to "Delete", problem_solution_path(@problem, s), method: :delete
         %img.line{:alt => "line", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/line.gif"}
     %br.clear
     %span.main_post_bottom
