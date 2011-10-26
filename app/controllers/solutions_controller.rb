@@ -7,4 +7,10 @@ class SolutionsController < InheritedResources::Base
       format.html { redirect_to problem_path(@problem) }
     end
   end
+
+  def update
+    super do |format|
+      format.html { redirect_to problem_path(@problem) }
+    end
+  end
 end
