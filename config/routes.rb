@@ -1,5 +1,7 @@
 AnalyticalFoundation::Application.routes.draw do
 
+  resources :categories
+
   resources :problems do
     resources :solutions
   end

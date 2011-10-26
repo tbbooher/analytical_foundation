@@ -38,7 +38,7 @@
           - if @user.id == s.user.id
             = link_to "Edit", edit_problem_solution_path(@problem, s)
             |
-            = link_to "Delete", problem_solution_path(@problem, s), method: :delete
+            = button_to "Delete", problem_solution_path(@problem, s), confirm: "really delete?", method: :delete, style: "display:inline"
         %img.line{:alt => "line", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/line.gif"}
     %br.clear
     %span.main_post_bottom
@@ -62,8 +62,7 @@
 
 %noscript Please enable javascript
 
-= link_to 'Edit', edit_problem_path(@problem)
-\|
-= link_to 'Problems List', problems_path
-\|
-= link_to 'Home', root_path
+%div
+  = link_to 'Edit', edit_problem_path(@problem)
+  |
+  = link_to 'Problems List', problems_path
