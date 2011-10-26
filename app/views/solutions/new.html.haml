@@ -1,5 +1,17 @@
-%h1 New solution
 
-= render 'form'
+.main_post
+  %span.main_post_top
+  %h1
+    Post a new solution for
+    = @problem.title
+  %img.line{:alt => "line", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/line.gif"}
+  = render 'form'
+  %br.clear
+  %span.main_post_bottom
 
-= link_to 'Back', solutions_path
+%script{:src => "markitup/jquery.markitup.js", :type => "text/javascript"}
+
+%link{:href => "markitup/skins/markitup/style.css", :rel => "stylesheet", :type => "text/css"}/
+%link{:href => "markitup/sets/default/style.css", :rel => "stylesheet", :type => "text/css"}/
+
+= link_to 'Back', problem_solutions_path(@problem)

@@ -1,7 +1,8 @@
 AnalyticalFoundation::Application.routes.draw do
-  resources :solutions
 
-  resources :problems
+  resources :problems do
+    resources :solutions
+  end
 
   ActiveAdmin.routes(self)
 
