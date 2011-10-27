@@ -9,12 +9,15 @@
               %span.author
                 = link_to p.submitter.name, p.submitter
               %span.date
-                = p.created_at.to_s
+                = p.created_at.to_s(:db)
               %span.categories
-                = link_to "Radar Problems", "#"
+                = p.categories.map(&:name).join(",")
+              %span.categories
+                Solutions:
+                = p.solutions.count
               %span.readmore
                 %span
-                  = link_to "full post »", p
+                  = link_to "see solutions »", p
           %img.close{:alt => "close", :src => "http://www.elegantthemes.com/preview/DailyNotes/wp-content/themes/DailyNotes/images/close.png"}
             %h1
               = p.title
