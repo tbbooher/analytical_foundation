@@ -1,5 +1,7 @@
 AnalyticalFoundation::Application.routes.draw do
 
+  resources :helpful_resources
+
   resources :categories
 
   resources :problems do
