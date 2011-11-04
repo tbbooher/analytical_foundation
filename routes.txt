@@ -1,0 +1,69 @@
+                categories GET        /categories(.:format)                              {:action=>"index", :controller=>"categories"}
+                           POST       /categories(.:format)                              {:action=>"create", :controller=>"categories"}
+              new_category GET        /categories/new(.:format)                          {:action=>"new", :controller=>"categories"}
+             edit_category GET        /categories/:id/edit(.:format)                     {:action=>"edit", :controller=>"categories"}
+                  category GET        /categories/:id(.:format)                          {:action=>"show", :controller=>"categories"}
+                           PUT        /categories/:id(.:format)                          {:action=>"update", :controller=>"categories"}
+                           DELETE     /categories/:id(.:format)                          {:action=>"destroy", :controller=>"categories"}
+         problem_solutions GET        /problems/:problem_id/solutions(.:format)          {:action=>"index", :controller=>"solutions"}
+                           POST       /problems/:problem_id/solutions(.:format)          {:action=>"create", :controller=>"solutions"}
+      new_problem_solution GET        /problems/:problem_id/solutions/new(.:format)      {:action=>"new", :controller=>"solutions"}
+     edit_problem_solution GET        /problems/:problem_id/solutions/:id/edit(.:format) {:action=>"edit", :controller=>"solutions"}
+          problem_solution GET        /problems/:problem_id/solutions/:id(.:format)      {:action=>"show", :controller=>"solutions"}
+                           PUT        /problems/:problem_id/solutions/:id(.:format)      {:action=>"update", :controller=>"solutions"}
+                           DELETE     /problems/:problem_id/solutions/:id(.:format)      {:action=>"destroy", :controller=>"solutions"}
+                  problems GET        /problems(.:format)                                {:action=>"index", :controller=>"problems"}
+                           POST       /problems(.:format)                                {:action=>"create", :controller=>"problems"}
+               new_problem GET        /problems/new(.:format)                            {:action=>"new", :controller=>"problems"}
+              edit_problem GET        /problems/:id/edit(.:format)                       {:action=>"edit", :controller=>"problems"}
+                   problem GET        /problems/:id(.:format)                            {:action=>"show", :controller=>"problems"}
+                           PUT        /problems/:id(.:format)                            {:action=>"update", :controller=>"problems"}
+                           DELETE     /problems/:id(.:format)                            {:action=>"destroy", :controller=>"problems"}
+           admin_dashboard            /admin(.:format)                                   {:action=>"index", :controller=>"admin/dashboard"}
+            admin_comments GET        /admin/comments(.:format)                          {:action=>"index", :controller=>"admin/comments"}
+                           POST       /admin/comments(.:format)                          {:action=>"create", :controller=>"admin/comments"}
+         new_admin_comment GET        /admin/comments/new(.:format)                      {:action=>"new", :controller=>"admin/comments"}
+        edit_admin_comment GET        /admin/comments/:id/edit(.:format)                 {:action=>"edit", :controller=>"admin/comments"}
+             admin_comment GET        /admin/comments/:id(.:format)                      {:action=>"show", :controller=>"admin/comments"}
+                           PUT        /admin/comments/:id(.:format)                      {:action=>"update", :controller=>"admin/comments"}
+                           DELETE     /admin/comments/:id(.:format)                      {:action=>"destroy", :controller=>"admin/comments"}
+            admin_problems GET        /admin/problems(.:format)                          {:action=>"index", :controller=>"admin/problems"}
+                           POST       /admin/problems(.:format)                          {:action=>"create", :controller=>"admin/problems"}
+         new_admin_problem GET        /admin/problems/new(.:format)                      {:action=>"new", :controller=>"admin/problems"}
+        edit_admin_problem GET        /admin/problems/:id/edit(.:format)                 {:action=>"edit", :controller=>"admin/problems"}
+             admin_problem GET        /admin/problems/:id(.:format)                      {:action=>"show", :controller=>"admin/problems"}
+                           PUT        /admin/problems/:id(.:format)                      {:action=>"update", :controller=>"admin/problems"}
+                           DELETE     /admin/problems/:id(.:format)                      {:action=>"destroy", :controller=>"admin/problems"}
+           admin_solutions GET        /admin/solutions(.:format)                         {:action=>"index", :controller=>"admin/solutions"}
+                           POST       /admin/solutions(.:format)                         {:action=>"create", :controller=>"admin/solutions"}
+        new_admin_solution GET        /admin/solutions/new(.:format)                     {:action=>"new", :controller=>"admin/solutions"}
+       edit_admin_solution GET        /admin/solutions/:id/edit(.:format)                {:action=>"edit", :controller=>"admin/solutions"}
+            admin_solution GET        /admin/solutions/:id(.:format)                     {:action=>"show", :controller=>"admin/solutions"}
+                           PUT        /admin/solutions/:id(.:format)                     {:action=>"update", :controller=>"admin/solutions"}
+                           DELETE     /admin/solutions/:id(.:format)                     {:action=>"destroy", :controller=>"admin/solutions"}
+    new_admin_user_session GET        /admin/login(.:format)                             {:action=>"new", :controller=>"active_admin/devise/sessions"}
+        admin_user_session POST       /admin/login(.:format)                             {:action=>"create", :controller=>"active_admin/devise/sessions"}
+destroy_admin_user_session DELETE|GET /admin/logout(.:format)                            {:action=>"destroy", :controller=>"active_admin/devise/sessions"}
+       admin_user_password POST       /admin/password(.:format)                          {:action=>"create", :controller=>"active_admin/devise/passwords"}
+   new_admin_user_password GET        /admin/password/new(.:format)                      {:action=>"new", :controller=>"active_admin/devise/passwords"}
+  edit_admin_user_password GET        /admin/password/edit(.:format)                     {:action=>"edit", :controller=>"active_admin/devise/passwords"}
+                           PUT        /admin/password(.:format)                          {:action=>"update", :controller=>"active_admin/devise/passwords"}
+                home_about GET        /home/about(.:format)                              {:controller=>"home", :action=>"about"}
+           home_curriculum GET        /home/curriculum(.:format)                         {:controller=>"home", :action=>"curriculum"}
+             home_schedule GET        /home/schedule(.:format)                           {:controller=>"home", :action=>"schedule"}
+                      root            /                                                  {:controller=>"home", :action=>"index"}
+      destroy_user_session GET        /users/sign_out(.:format)                          {:controller=>"devise/sessions", :action=>"destroy"}
+          new_user_session GET        /users/sign_in(.:format)                           {:action=>"new", :controller=>"devise/sessions"}
+              user_session POST       /users/sign_in(.:format)                           {:action=>"create", :controller=>"devise/sessions"}
+      destroy_user_session DELETE     /users/sign_out(.:format)                          {:action=>"destroy", :controller=>"devise/sessions"}
+             user_password POST       /users/password(.:format)                          {:action=>"create", :controller=>"devise/passwords"}
+         new_user_password GET        /users/password/new(.:format)                      {:action=>"new", :controller=>"devise/passwords"}
+        edit_user_password GET        /users/password/edit(.:format)                     {:action=>"edit", :controller=>"devise/passwords"}
+                           PUT        /users/password(.:format)                          {:action=>"update", :controller=>"devise/passwords"}
+  cancel_user_registration GET        /users/cancel(.:format)                            {:action=>"cancel", :controller=>"devise/registrations"}
+         user_registration POST       /users(.:format)                                   {:action=>"create", :controller=>"devise/registrations"}
+     new_user_registration GET        /users/sign_up(.:format)                           {:action=>"new", :controller=>"devise/registrations"}
+    edit_user_registration GET        /users/edit(.:format)                              {:action=>"edit", :controller=>"devise/registrations"}
+                           PUT        /users(.:format)                                   {:action=>"update", :controller=>"devise/registrations"}
+                           DELETE     /users(.:format)                                   {:action=>"destroy", :controller=>"devise/registrations"}
+                      user GET        /users/:id(.:format)                               {:action=>"show", :controller=>"users"}

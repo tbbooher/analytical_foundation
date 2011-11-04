@@ -1,0 +1,2 @@
+module HelpfulResourcesHelper
+end

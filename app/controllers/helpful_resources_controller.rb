@@ -1,0 +1,2 @@
+class HelpfulResourcesController < ApplicationController
+end
